@@ -4,177 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sajansznm- Best Movie Collections</title>
-<!-- 
-    - Favicon
- -->
-    <link rel="shortcut icon" href="../assests/favicon.svg" type="image/svg+xml">
-
-<!-- 
-    - Custom Css Link
- -->
-
-<link rel="stylesheet" href="../css/style.css">
-
-<!-- 
-    Google Fonts Link
- -->
-
- <!-- 
-
- Preconnect is an optimization technique that tells the browser to initiate an early connection to the 
- specified domain in order to reduce latency when later requesting resources from that domain.
-  -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
-
- <!-- 
-    The crossorigin attribute is specified to indicate that the requested resources from this domain will be requested with cross-origin loading, 
-    which can be useful for security purposes when dealing with different origins.
-  -->
-
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
- 
-<!-- 
-    custom Javascript Link
- -->
-
-
-
-<!-- 
-    Ionicons Link
- -->
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="images/logo/e.png">
+    <title>MAMA BRO</title>
 </head>
+<body>
+    <!--Header section-->
+    <header>
 
-<body id="top">
 
-    <!-- 
-      - #HEADER
-    -->
-
-    <header class="header" data-header>
-      <div class="container">
-  
-        <!-- <div class="overlay" data-overlay>
-
-        </div> -->
-  
-        <a href="./index.html" class="logo">
-          <img src="../assests/favicon.svg" alt="Filmlane logo">
-        </a>
-  
-        <div class="header-actions">
-  
-          <button class="search-btn">
-            <ion-icon name="search-outline"></ion-icon>
-          </button>
-  
-          <div class="lang-wrapper">
-            <label for="language">
-              <ion-icon name="globe-outline"></ion-icon>
-            </label>
-  
-            <select name="language" id="language">
-              <option value="en">EN</option>
-              <option value="au">AU</option>
-              <option value="ar">AR</option>
-              <option value="tu">TU</option>
-            </select>
-          </div>
-  
-          <button class="btn btn-primary">Sign in</button>
-  
-        </div>
-  
-        <button class="menu-open-btn" data-menu-open-btn>
-          <ion-icon name="reorder-two"></ion-icon>
+    <div class="logo">
+        <img src="images/logo/e.png" alt="">
+        <h3>SajanCollection</h3>
+    </div>
+    <div class="nav" id="small_menu">
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
         </button>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#hollywood">Movies</a></li>
+            <li><a href="#tollywood">Generes</a></li>
+            <li><a href="#youtube">Series</a></li>
+        </ul>
+    </div>
   
-        <nav class="navbar" data-navbar>
-  
-          <div class="navbar-top">
-  
-            <a href="./index.html" class="logo">
-              <img src="../assests/images/logo.svg" alt="Filmlane logo">
-            </a>
-  
-            <button class="menu-close-btn" data-menu-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-  
-          </div>
-  
-          <ul class="navbar-list">
-  
-            <li>
-              <a href="./index.html" class="navbar-link">Home</a>
-            </li>
-  
-            <li>
-              <a href="#" class="navbar-link">Movie</a>
-            </li>
-  
-            <li>
-              <a href="#" class="navbar-link">Tv Show</a>
-            </li>
-  
-            <li>
-              <a href="#" class="navbar-link">Web Series</a>
-            </li>
-  
-            <li>
-              <a href="#" class="navbar-link">Pricing</a>
-            </li>
-  
-          </ul>
-  
-          <ul class="navbar-social-list">
-            
-            <li>
-              <a href="#" class="navbar-social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-  
-            <li>
-              <a href="#" class="navbar-social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-  
-            <li>
-              <a href="#" class="navbar-social-link">
-                <ion-icon name="logo-pinterest"></ion-icon>
-              </a>
-            </li>
-  
-            <li>
-              <a href="#" class="navbar-social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-  
-            <li>
-              <a href="#" class="navbar-social-link">
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
-            </li>
-  
-          </ul>
-  
-        </nav>
-      </div>
-    </header>
+    <div class="user">
+        <i class="fas fa-bell"></i>
+        <i class="fas fa-search"></i>
+        <a href="">Login</a>
+     
+    </div>  
+</header>
+<!----------------->
 
+<!--Hero section-->
+<section>
+    <div class="heropage">
+        <div class="inside-heropage">
+            <span>NOW STREAMING</span>
+            <div class="line1">
+
+            </div>
+            <h1>PEAKY BLINDERS</h1>
+            <p>Action,Drama,Sci-fi | 2021 | USA | 142 min</p>
+            <div class="btn1">
+            <a href=""><i class="fas fa-play"></i>Watch Now</a>
+            <a href=""><i class="fas fa-heart"></i>Watch Later</a>
+            </div>
+        </div>
+    </div>
+    <div class="poster">
+        <img src="images/hero page/3.jpg" alt="">
+    </div>
+</section>
 </body>
-
-<script src="../javascript/index.js"> </script>
-
-
 </html>
 
