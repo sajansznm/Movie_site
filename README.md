@@ -87,3 +87,14 @@ movie-streaming-site/
 
 ### Note: This README file is a sample template and can be customized according to the actual project details and requirements.
 
+
+## Here are the reference that I have taken to build this site.
+
+[Blog to make good sites](https://morioh.com/p/177f0c220d2c): https://morioh.com/p/177f0c220d2c
+
+
+[Add video in your html](https://animoto.com/blog/video-marketing/embed-video-on-website) : https://animoto.com/blog/video-marketing/embed-video-on-website
+
+
+
+
