@@ -1,66 +1,28 @@
-/**
- *  Functionality will be given here.
- * 
-**/
+let scrollToTopBtn = document.getElementById("scrollToTop");
 
-
-/**
- * nabvar 
- */
-
-
-
-const navOpenBtn = document.querySelector("[data-menu-open-btn]");
-
-const navCloseBtn = document.querySelector("[data-menu-close-btn]");
-
-const navbar = document.querySelector("[data-navbar]");
-
-const overlay = document.querySelector("[data-overlay]");
-
-const navElemArray = [navOpenBtn, navCloseBtn, overlay];
-
-for (let i = 0; i < navElemArray.length; i++) {
-
-  navElemArray[i].addEventListener("click", function () {
-
-    navbar.classList.toggle("active");
-    overlay.classList.toggle("active");
-    document.body.classList.toggle("active");
-
-  });
+window.onscroll = function() {
+    scrollFunction();
 };
 
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+}
 
-/**
- * Making sticky Header
- */
-
-const header = document.querySelector("[data-header]");
-
-window.addEventListener("scroll", function () {
-    this.window.scrollY >= 10 ? header.classList.add("active") : header.classList.remove("active")
-})
-
-
-
-/**
- * go top
- */
-
-const goTopBtn = document.querySelector("[data-go-top]");
-
-window.addEventListener("scroll", function () {
-
-  window.scrollY >= 500 ? goTopBtn.classList.add("active") : goTopBtn.classList.remove("active");
-
+scrollToTopBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    smoothScrollToTop();
 });
 
-
-
-const video = document.getElementById('myVideo');
-video.volume = 0.1
-
-
+function smoothScrollToTop() {
+    var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+    if (currentPosition > 0) {
+        window.requestAnimationFrame(smoothScrollToTop);
+        window.scrollTo(0, currentPosition - currentPosition / 8);
+    }
+}
 
 

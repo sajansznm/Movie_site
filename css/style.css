@@ -327,28 +327,28 @@ position: absolute;
 }
 
 
-.anime-movies h1{
+.dashboard-movies h1{
     font-size: 20px;
     color:rgb(18, 241, 241);
 }
-.anime-container{
+.dashboard-container{
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.anime-inside h3{
+.dashboard-inside h3{
     font-size: 15px;
     font-weight:500;
     margin-top: 6px;
    
 }
-.anime-inside img{
+.dashboard-inside img{
    height: 250px;
    transition: all 500ms ease-in-out;
    border-radius: 10px;
 }
-.anime-inside img:hover{
+.dashboard-inside img:hover{
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -684,3 +684,90 @@ margin-left: 120px;
 
 
 }
+
+
+@media only screen and (max-width: 480px) {
+    body {
+      height: auto;
+    }
+    
+    header {
+      height: auto;
+      padding: 10px;
+    }
+    
+    #iconbar {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .logo {
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+    
+    .logo img {
+      height: 5vh;
+    }
+    
+    .logo h3 {
+      font-size: 20px;
+      margin-top: -20px;
+      margin-left: 40px;
+    }
+    
+    .nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 200px;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+    }
+    
+    .nav ul li a {
+      padding: 10px;
+      color: white;
+    }
+    
+    .nav ul li a:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .nav ul.active {
+      transform: translateX(0%);
+    }
+    
+    #iconbar.active {
+      color: teal;
+    }
+    
+    .user {
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+    
+    .user h4 {
+      font-size: 12px;
+      padding: 6px 12px;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+    
+    .heropage {
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+    
+    .inside-heropage h1 {
+      font-size: 20px;
+    }
+    
+    .inside-heropage p {
+      font-size: 12px;
+    }
+  }
