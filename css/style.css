@@ -108,8 +108,8 @@ margin-top: 50px;
 .heropage{
     position: absolute;
     color:white;
-   margin-top: 100px;
-   margin-left: 100px;
+    margin-top: 100px;
+    margin-left: 100px;
 }
 .inside-heropage{
     line-height:2;
@@ -191,6 +191,7 @@ section video{
     margin-top: 30px;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .latest-inside img{
     height: 122px;
@@ -561,8 +562,9 @@ position: absolute;
 }
 .yt-container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+
 }
 .inside-yt img{
     padding: 10px 0px;
@@ -685,89 +687,211 @@ margin-left: 120px;
 
 }
 
+/* Media queries for medium screens */
+@media (min-width: 300px) and (max-width: 768px) {
+    .tollywood-container,.hollywood-container,.iollywood-container,.sollywood-container {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+  
+    .tollywood-inside {
+      width: 45%;
+      margin-bottom: 20px;
+    }
+  
+    .tollywood-inside img {
+      height: 200px;
+    }
 
-@media only screen and (max-width: 480px) {
-    body {
-      height: auto;
-    }
+      .tollywood-inside,.hollywood-inside, .iollywood-inside,.sollywood-inside {
+        width: 45%;
+        margin-bottom: 20px;
+      }
+      
+      .tollywood-inside img ,.hollywood-inside img , .iollywood-inside img ,.sollywood-inside img {
+        height: 200px;
+      }
+      .more1,
+      .more2,
+      .more4,
+      .more5,
+      .more6{
+        text-align: center;
+        margin-top: 20px;
+      }
+      
+      .more1 a,
+      .more2 a,
+      .more4 a,
+      .more5 a,
+      .more6 a{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgb(18, 241, 241);
+        color: black;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .akira {
+        margin-top: 2000px;
+      }
     
-    header {
-      height: auto;
-      padding: 10px;
-    }
+      .yt-movies {
+        padding: 10px 20px;
+      }
     
-    #iconbar {
-      opacity: 1;
-      visibility: visible;
-    }
+      .line {
+        margin-left: 20px;
+      }
     
-    .logo {
-      margin-left: 10px;
-      margin-top: 10px;
-    }
+      .yt-container {
+        justify-content: center;
+      }
     
-    .logo img {
-      height: 5vh;
-    }
+      .inside-yt img {
+        height: 200px;
+      }
     
-    .logo h3 {
-      font-size: 20px;
-      margin-top: -20px;
-      margin-left: 40px;
-    }
+      .youtubebtn {
+        margin-top: 2500px;
+      }
+
+
+      .logo {
+        margin-left: 10px;
+        margin-top: 10px;
+      }
     
-    .nav ul {
-      display: none;
-      flex-direction: column;
-      background-color: rgba(0, 0, 0, 0.8);
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100vh;
-      width: 200px;
-      transform: translateX(100%);
-      transition: transform 0.5s ease-in;
-    }
+      .logo img {
+        height: 4vh;
+      }
     
-    .nav ul li a {
-      padding: 10px;
-      color: white;
-    }
+      .logo h3 {
+        font-size: 16px;
+        margin-top: -20px;
+        margin-left: 5px;
+      }
     
-    .nav ul li a:hover {
-      background-color: rgba(0, 0, 0, 0.5);
-    }
+      .nav ul {
+        display: none;
+      }
     
-    .nav ul.active {
-      transform: translateX(0%);
-    }
+      #small_menu {
+        display: flex;
+        align-items: center;
+      }
     
-    #iconbar.active {
-      color: teal;
-    }
+      #hamburger {
+        display: block;
+      }
     
-    .user {
-      margin-top: 10px;
-      margin-right: 10px;
-    }
+      .user {
+        margin-top: 10px;
+        margin-right: 10px;
+      }
     
-    .user h4 {
-      font-size: 12px;
-      padding: 6px 12px;
-      margin-top: 10px;
-      margin-right: 10px;
-    }
+      .user a {
+        padding: 6px 12px;
+        font-size: 12px;
+      }
     
-    .heropage {
-      margin-top: 30px;
-      margin-left: 30px;
-    }
+      .user i {
+        font-size: 14px;
+      }
     
-    .inside-heropage h1 {
-      font-size: 20px;
-    }
+      .user h4 {
+        display: none;
+      }
     
-    .inside-heropage p {
-      font-size: 12px;
     }
+ 
+  
+  /* Media queries for larger screens */
+  @media (min-width: 769px) and (max-width: 1340px) {
+    .tollywood-container,.hollywood-container,.iollywood-container,.sollywood-container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .tollywood-inside,.hollywood-inside, .iollywood-inside,.sollywood-inside {
+      width: 30%;
+      margin-bottom: 20px;
+    }
+  
+    .tollywood-inside img ,.hollywood-inside img , .iollywood-inside img ,.sollywood-inside img {
+        height: 250px;
+    }
+
+
+      .more1,
+      .more2,
+      .more4,
+      .more5,
+      .more6{
+        text-align: center;
+        margin-top: 20px;
+      }
+      
+      .more1 a,
+      .more2 a,
+      .more4 a,.more5 a,.more6 a{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgb(18, 241, 241);
+        color: black;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+
+      .logo {
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+    
+      .logo img {
+        height: 4vh;
+      }
+    
+      .logo h3 {
+        font-size: 16px;
+        margin-top: -20px;
+        margin-left: 5px;
+      }
+    
+      .nav ul {
+        display: none;
+      }
+    
+      #small_menu {
+        display: flex;
+        align-items: center;
+      }
+    
+      #hamburger {
+        display: block;
+      }
+    
+      .user {
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+    
+      .user a {
+        padding: 6px 12px;
+        font-size: 12px;
+      }
+    
+      .user i {
+        font-size: 14px;
+      }
+    
+      .user h4 {
+        display: none;
+      }  
   }
+
